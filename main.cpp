@@ -1,19 +1,23 @@
 #include "raylib.h"
-
+#include <stdio.h>
 int main() {
-  InitWindow(800, 600, "Hello Raylib");
+  int width, height;
+  printf("what do you want the width to be? \n");
+  scanf("%d", &width);
+  printf("what do you want the heigh to be?\n");
+  scanf("%d", &height);
+  InitWindow(width, height, "My own name");
   SetTargetFPS(60);
 
   while (!WindowShouldClose()) {
     BeginDrawing();
-    ClearBackground(RAYWHITE);
+    ClearBackground(RED);
     DrawText("Congrats! You created your first window!", 190, 200, 20,
              LIGHTGRAY);
     EndDrawing();
   }
 
-  CloseWindow();
+  // CloseWindow(); --not really needed?
 
   return 0;
 }
-
