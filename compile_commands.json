@@ -1,0 +1,8 @@
+[
+    {
+        "directory": "/home/chrissolanilla/gameC",
+        "command": "/usr/bin/g++ -I/home/chrissolanilla/raylib/src -I/home/chrissolanilla/raylib/src/external -std=c++14 -o main.o -c /home/chrissolanilla/gameC/main.cpp",
+        "file": "/home/chrissolanilla/gameC/main.cpp"
+    }
+]
+
